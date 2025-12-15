@@ -20,7 +20,7 @@ Repository Structure
 ## Team Members (Group 08)
 All members contributed equally (25%) to the development of this project, including data cleaning, analysis, modeling, and reporting.
 
-* **Giancarlo Pugliese** (20250533)
-* **Leonor Laborinho** (20250469)
-* **Rita Rodrigues** (20250528)
-* **Vasco Líbano Monteiro** (20250478)
+Giancarlo Pugliese (20250533)
+Leonor Laborinho (20250469)
+Rita Rodrigues (20250528)
+Vasco Líbano Monteiro (20250478)
