@@ -1,4 +1,4 @@
-# Cars4You: Car Price Prediction
+# Cars4You: Car Price Prediction Model
 
 > **Machine Learning Project (2025/2026)** designed to predict vehicle market prices using regression techniques.
 
@@ -120,5 +120,5 @@ This project was created by:
 
 ---
 <p align="center">
-  <i>Created for the Machine Learning Course Assessment.</i>
+  <i>Created for the Machine Learning Course at NOVA IMS.</i>
 </p>
