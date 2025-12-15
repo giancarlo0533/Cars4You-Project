@@ -30,7 +30,6 @@ The project was developed using Python and the following libraries:
 | **Pandas** | Data Manipulation & Aggregation |
 | **Matplotlib / Seaborn** | Data Visualization (EDA) |
 | **Scikit-Learn** | Data Preprocessing & Modeling |
-| **XGBoost** | Gradient Boosting for Regression |
 | **SciPy** | Statistical Analysis |
 
 ---
@@ -59,6 +58,8 @@ The project followed a standard Data Science workflow:
     * **XGBoost Regressor (Best Model)**.
 
 ---
+### Model Selection & Evaluation
+We selected the **R² Score** as our primary evaluation metric for the Car Price Prediction model. During the selection process, we rigorously filtered out overfitted models—specifically those exhibiting perfect training scores (R² ≈ 1.0 / MSE ≈ 0) but failing to generalize on validation data (yielding negative or poor scores). Consequently, the final list of viable models is as follows:
 
 ## Key Results
 Here is a snapshot of our model's performance on the validation set:
@@ -71,7 +72,6 @@ Here is a snapshot of our model's performance on the validation set:
 > **Visual Insight:**
 > 
 > ![Model Results](images/feature_importance.png)
-
 ---
 
 ## Team Members (Group 08)
