@@ -1,26 +1,88 @@
-Cars4You: Car Price Prediction Project
+# Cars4You: Car Price Prediction
 
-This repository contains the Machine Learning project developed by Group 08 for the Machine Learning course
+> **Machine Learning Project (2025/2026)** designed to predict vehicle market prices using regression techniques.
 
-The objective of this project is to assist "Cars 4 You", a car resale company, in optimizing their vehicle evaluation process. By developing a predictive regression model, We aim to estimate the market price of a car based on its characteristics, reducing the dependency on physical inspections by mechanics and expediting customer service.
+---
 
+## Project Overview
+**Cars 4 You** is a car resale company that wants to optimize its vehicle evaluation process. Currently, the process requires physical inspections by mechanics, which creates bottlenecks.
 
-Project Goals
-1.	Regression Benchmarking: Develop a robust regression model to predict the target variable `price`.
-2.	Competition Submission: Generate predictions for the test dataset to compete in the class Kaggle challenge.
-3.	Data Analysis: Perform comprehensive Exploratory Data Analysis (EDA) to understand market trends and feature correlations.
+**The Goal:** Develop a Machine Learning model to estimate the price of a car based on its characteristics (mileage, brand, fuel type, etc.) without needing a physical check-up.
 
-Repository Structure
+---
 
---data/                   # Dataset files (train and test csv)
---images/                 # Visualizations generated during EDA
---Group_08_notebook.ipynb # Main Jupyter Notebook with full project pipeline
---README.txt              # Project documentation
+## Dataset
+The dataset consists of records from the company's database, including features such as:
+* `brand`: Manufacturer of the car.
+* `fuel_type`: Diesel, Petrol, Electric, etc.
+* `mileage`: Distance traveled.
+* `engine_size`: Capacity of the engine.
+* `transmission`: Automatic or Manual.
+* **Target Variable:** `price` (in Euros).
+
+---
+
+## Tech Stack
+The project was developed using Python and the following libraries:
+
+| Library | Usage |
+| :--- | :--- |
+| **Pandas** | Data Manipulation & Aggregation |
+| **Matplotlib / Seaborn** | Data Visualization (EDA) |
+| **Scikit-Learn** | Data Preprocessing & Modeling |
+| **XGBoost** | Gradient Boosting for Regression |
+| **SciPy** | Statistical Analysis |
+
+---
+
+## Project Pipeline
+
+The project followed a standard Data Science workflow:
+
+1.  **Data Cleaning** 
+    * Handling missing values.
+    * Removing duplicates.
+    * Outlier detection (IQR method).
+
+2.  **Exploratory Data Analysis (EDA)** 
+    * Univariate analysis (Distributions).
+    * Bivariate analysis (Correlation with Price).
+    * Feature Importance visualization.
+
+3.  **Feature Engineering** 
+    * Encoding categorical variables (One-Hot & Target Encoding).
+    * Feature scaling (StandardScaler).
+
+4.  **Model Building** 
+    * Linear Regression (Baseline).
+    * Random Forest Regressor.
+    * **XGBoost Regressor (Best Model)**.
+
+---
+
+## Key Results
+Here is a snapshot of our model's performance on the validation set:
+
+| Metric | Score |
+| :--- | :--- |
+| **RMSE** | *1234.56 €* (Substitui pelo teu valor) |
+| **R² Score** | *0.89* (Substitui pelo teu valor) |
+
+> **Visual Insight:**
+> 
+> ![Model Results](images/feature_importance.png)
+
+---
 
 ## Team Members (Group 08)
-All members contributed equally (25%) to the development of this project, including data cleaning, analysis, modeling, and reporting.
+This project was created by:
 
-* **Giancarlo Pugliese** (20250533)
-* **Leonor Laborinho** (20250469)
-* **Rita Rodrigues** (20250528)
-* **Vasco Líbano Monteiro** (20250478)
+**Giancarlo Pugliese** (20250533)
+**Leonor Laborinho** (20250469)
+**Rita Rodrigues** (20250528)
+**Vasco Líbano Monteiro** (20250478)
+
+---
+<p align="center">
+  <i>Created for the Machine Learning Course Assessment.</i>
+</p>
