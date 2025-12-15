@@ -46,39 +46,39 @@ The project was developed using Python and the following libraries:
 The project followed a standard Data Science workflow:
 
 1.  **Data Cleaning & Exploratory Analysis**
-   *Importing needed libraries
-   *Importing Datasets
-   *Exploratory Data Analysis
-   *Initial Data Preparation
-   *Visual Exploration After Data Clean-up
+   * Importing needed libraries
+   * Importing Datasets
+   * Exploratory Data Analysis
+   * Initial Data Preparation
+   * Visual Exploration After Data Clean-up
 
-2.  **Train/Validation Split** 
+3.  **Train/Validation Split** 
 
-3.  **Pre-processing and Feature Engineering** 
-    *Treating Missing Values
-    *Treating Outliers
-    *Feature Engeneering
-    *Visual Exploration after feature engeneering
-    *Scaling the variables
-    *Encoding the Variables
+4.  **Pre-processing and Feature Engineering** 
+    * Treating Missing Values
+    * Treating Outliers
+    * Feature Engeneering
+    * Visual Exploration after feature engeneering
+    * Scaling the variables
+    * Encoding the Variables
 
-4.  **Feature Selection** 
+5.  **Feature Selection** 
     * Filter Methods
     * Wrapper Methods
     * Embedded Methods
     * Feature Selection Conclusion
 
-5. **Modeling and Evaluation**
-   *Initial Modelling and evaluation without tunning
-   *Hyperparameter tuning
-   *Final Ensemble Model
+6. **Modeling and Evaluation**
+   * Initial Modelling and evaluation without tunning
+   * Hyperparameter tuning
+   * Final Ensemble Model
 
-6. **Open-Ended Section**
-   *Driver Identification:Feature Importance Analysis
-   *Deployment: Analysis Interface
-   *What-if Analysis: Depreciation Curve
+7. **Open-Ended Section**
+   * Driver Identification:Feature Importance Analysis
+   * Deployment: Analysis Interface
+   * What-if Analysis: Depreciation Curve
 
-7. **Kaggle Submission**
+8. **Kaggle Submission**
 
 ---
 ### Model Selection & Evaluation
