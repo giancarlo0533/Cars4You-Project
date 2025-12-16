@@ -89,12 +89,13 @@ Following the initial benchmarking, we performed hyperparameter optimization usi
 
 | Model | MAE | RMSE | R^2
 | :--- | :--- | :--- | :--- |
-| **Ridge Regression** |2250.06 | 3925.00 | 0.8376 |
-| **Bagged KNN** | 739.51 | 1374.29| 0.9801 |
-| **Bagged Decision Tree** | 892.49 | 1721.91 | 0.9688 |
-| **Random Forest** | 1020.98 | 1915.57 | 0.9613 |
-| **HistGradientBoosting** | 918.28 | 1516.01 | 0.9758 |
-| **Extra Trees Regressor** |1106.46|2007.68|0.9575|
+| **Ridge Regression** |2248.98| 3924.33 | 0.8377 |
+| **Bagged KNN** | 1374.62 | 2546.34| 0.9317 |
+| **Bagged Decision Tree** | 1343.98 | 2516.55 | 0.9333 |
+| **Random Forest** | 1346.10 | 2525.71 | 0.9328 |
+| **HistGradientBoosting** | 1278.49 | 2262.53 | 0.9460 |
+| **Extra Trees Regressor** |1379.06|2586.27|0.9295|
+
 
 The optimization process significantly reshuffled the model rankings, highlighting the limitations of linear approaches on this dataset. Bagged KNN emerged as the superior model, offering the best balance of accuracy and stability, followed closely by HistGradientBoosting as the leading tree-based method.
 
@@ -103,10 +104,8 @@ To maximize predictive performance, we implemented a Weighted Blending Ensemble.
 
 | Model | Assigned Weight | Validation MAE |
 | :--- | :--- | :--- |
-| **Bagged KNN** | 23% |1375|
-| **Bagged Decision Tree** | 12% |1344|
-| **HistGradientBoosting** | 65% |1278|
-| **Final Blended Ensemble** | - |1259|
+| **Bagged KNN** | 16.5% |1375|
+| **HistGradientBoosting** | 83.5% |1278|
 
 The ensemble achieved a lower validation MAE (~1,259) compared to the best single learner. While HistGradientBoosting remains the dominant driver, the complementary signal from the bagged models provided a consistent improvement in robustness and accuracy. Consequently, this weighted blend was adopted as the final solution.
 
