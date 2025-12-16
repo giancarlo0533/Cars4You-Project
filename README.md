@@ -104,8 +104,8 @@ To maximize predictive performance, we implemented a Weighted Blending Ensemble.
 
 | Model | Assigned Weight | Validation MAE |
 | :--- | :--- | :--- |
-| **Bagged KNN** | 16.5% |1375|
-| **HistGradientBoosting** | 83.5% |1278|
+| **Bagged KNN** | 16.5% |1263.60|
+| **HistGradientBoosting** | 83.5% |1263.60|
 
 The ensemble achieved a lower validation MAE (~1,259) compared to the best single learner. While HistGradientBoosting remains the dominant driver, the complementary signal from the bagged models provided a consistent improvement in robustness and accuracy. Consequently, this weighted blend was adopted as the final solution.
 
